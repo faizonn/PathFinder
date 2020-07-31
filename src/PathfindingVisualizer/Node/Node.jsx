@@ -1,12 +1,24 @@
-import React, {Component} from './node_modules/react'
+import React, { Component } from 'react'
 
-export default class Node extends Component{
-    constructor(props){
+import './Node.css';
+
+export default class Node extends Component {
+    constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {};
     }
 
-    render(){
-        return <div className= "node"></div>
+    render() {
+        const { isFinish, isStart } = this.props;
+        const extraClassName = isFinish
+            ? 'node-finish' : isStart
+                ? 'node-start'
+                : '';
+        return <div className={`node ${extraClassName}`}></div>;
     }
+}
+
+export const DEFAULT_NODE = {
+    row: 0,
+    col: 0,
 }
