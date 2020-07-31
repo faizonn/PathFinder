@@ -1,3 +1,6 @@
-.grid{
-    margin: 500px 0 0;
+.grid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
 }
