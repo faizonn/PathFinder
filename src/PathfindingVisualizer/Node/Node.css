@@ -6,17 +6,17 @@
 }
 
 .node-finish {
-  background-color: red;
+  background-color: coral;
 }
 
 .node-start {
-  background-color: green;
+  background-image: url(../FireTruck.png);
 }
 
 .node-visited {
   animation-name: visitedAnimation;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  animation-timing-function: linear;
   animation-delay: 0;
   animation-direction: alternate;
   animation-iteration-count: 1;
@@ -32,22 +32,22 @@
   }
 
   50% {
-    background-color: orangered;
+    background-color: rgba(17, 104, 217, 0.75);
   }
 
   75% {
     transform: scale(1.2);
-    background-color: orange;
+    background-color: rgba(0, 217, 159, 0.75);
   }
 
   100% {
     transform: scale(1);
-    background-color: green;
+    background-color: rgba(0, 190, 218, 0.75);
   }
 }
 
 .node-wall {
-  background-image: url(../Monster.png);
+  background-image: url(../rock.png);
 }
 
 .node-shortest-path {
